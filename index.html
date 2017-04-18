@@ -253,7 +253,7 @@
               
                 
                 <a class="post-title-link" href="/2017/04/18/Java中的对象类型转换-向上-向下转型/" itemprop="url">
-                  未命名
+                  Java中的对象类型转换--向上/向下转型
                 </a>
               
             
@@ -279,6 +279,39 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -306,9 +339,7 @@
 
       
         
-          <hr>
-<p>title: Java中的对象类型转换–向上/向下转型<br>date: 2017-04-18 22:38:38<br>tags: [Java, 向上转型, 向下转型]</p>
-<h2 id="categories-技术-Java"><a href="#categories-技术-Java" class="headerlink" title="categories: [技术, Java]"></a>categories: [技术, Java]</h2><h1 id="概念定义"><a href="#概念定义" class="headerlink" title="概念定义"></a>概念定义</h1><p>向上/向下转型是一种对象类型转换，在继承的基础上出现。目的是为了让类的使用范围和适用范围发生变化，以便操作不同范围的变量或者方法。</p>
+          <h1 id="概念定义"><a href="#概念定义" class="headerlink" title="概念定义"></a>概念定义</h1><p>向上/向下转型是一种对象类型转换，在继承的基础上出现。目的是为了让类的使用范围和适用范围发生变化，以便操作不同范围的变量或者方法。</p>
 <h2 id="向上转型"><a href="#向上转型" class="headerlink" title="向上转型"></a>向上转型</h2><p>先看一段代码：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span> </span>&#123;</div><div class="line">	String d = <span class="string">"ddddd"</span>;</div><div class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>&#123;</div><div class="line">        System.out.println(<span class="string">"animal eatting..."</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Bird</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</div><div class="line">	String d = <span class="string">"aaaaa"</span>;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>&#123;</div><div class="line">        System.out.println(<span class="string">"bird eatting..."</span>);</div><div class="line">        &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fly</span><span class="params">()</span></span>&#123;</div><div class="line">        System.out.println(<span class="string">"bird flying..."</span>);</div><div class="line">        &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test1</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Animal b=<span class="keyword">new</span> Bird(); </div><div class="line">        b.eat();</div><div class="line">        System.out.println(b.d);</div><div class="line">        <span class="comment">//b.fly(); </span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
           <!--noindex-->
           <div class="post-button text-center">
@@ -678,7 +709,7 @@
             
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -689,7 +720,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
